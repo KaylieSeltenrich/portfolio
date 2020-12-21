@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-
   </div>
 </template>
 
@@ -16,9 +15,5 @@ export default {
 </script>
 
 <style lang="css" scoped>
-#portrait{
-  margin-top: 50px;
-  border-radius: 500px;
-}
 
 </style>
