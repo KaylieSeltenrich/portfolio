@@ -11,6 +11,7 @@
         </a>
       </div>
     </div>
+   
     <div id="nav">
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
@@ -25,6 +26,7 @@
         </a>
       </div>
     </div>
+
     <router-view />
   </div>
 </template>
@@ -77,6 +79,7 @@ body {
   background-color: rgb(31, 36, 109);
   width: 100%;
 }
+
 #nav {
   display: none;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -91,6 +94,7 @@ body {
   background-color: rgb(31, 36, 109);
 }
 
+
 #nav a {
   display: grid;
   grid-template-columns: 1fr;
@@ -102,9 +106,6 @@ body {
   text-shadow: 5px 5px 5px #000000;
 }
 
-#nav a:hover {
-  font-size: 1.2em;
-}
 
 #icon-container {
   display: none;
@@ -122,6 +123,7 @@ img {
   top: 3vh;
   right: 10vw;
 }
+
 
 /* TABLET */
 

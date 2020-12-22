@@ -1,9 +1,13 @@
 <template>
   <div class="home">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <div id="title-container">
-    <div id="title">Kaylie Seltenrich</div>
+      <div id="title" class="animate__animated animate__fadeInDown">Kaylie Seltenrich</div>
     </div>
-    <div id="subtitle">Junior Fullstack Web Developer/Designer</div>
+    <div id="subtitle" class="animate__animated animate__fadeIn animate__delay-1s">Junior Fullstack Web Developer/Designer</div>
     <img id="portrait" src="@/assets/croppedimage.jpg" alt="self portrait" />
     <div id="short-description">
       Hello, my name is Kaylie Seltenrich. Creativity is my fuel and passion. I
@@ -33,7 +37,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
-#title-container{ 
+#title-container {
   max-height: 10vh;
   width: 100%;
 }
@@ -44,8 +48,7 @@ export default {
   font-family: Pridi, cursive;
   font-size: 2.6em;
   white-space: nowrap;
-  color:black;
- 
+  color: black;
 }
 
 #subtitle {
@@ -73,18 +76,26 @@ export default {
 
 .download {
   font-family: "Nixie One", cursive;
-  font-size: 1.2em;
+  font-weight: bold;
+  padding: 15px 25px;
   text-decoration: none;
-  font-weight: bolder;
-  color: white;
-  padding: 2%;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
   background-color: rgb(31, 36, 109);
-  border-radius: 10%;
-  border: 3px outset rgb(110, 75, 141);
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.download:active {
+  background-color: rgb(71, 76, 153);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 #download-container {
   margin-top: 10%;
   text-align: center;
 }
+
 </style>
