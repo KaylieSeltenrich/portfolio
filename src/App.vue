@@ -47,6 +47,18 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Nixie+One&family=Pridi&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./assets/email-pattern.png");
+  background-repeat: repeat;
+  height: 100%;
+  width: 100%;
+}
+
 #mobile-menu {
   display: block;
   position: absolute;
@@ -58,7 +70,7 @@ export default {
 
 #mobile-menu-nav {
   display: block;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   height: 12vh;
@@ -118,7 +130,7 @@ img {
     font-size: 1.3em;
   }
 
-  #mobile-menu{
+  #mobile-menu {
     width: 15%;
     height: 70%;
   }
