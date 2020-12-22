@@ -11,7 +11,7 @@
         </a>
       </div>
     </div>
-    <div id="nav" >
+    <div id="nav">
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
       <router-link to="/projects">Projects</router-link>
@@ -46,14 +46,33 @@ export default {
 </script>
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Nixie+One&family=Pridi&display=swap");
-#nav {
-  display: grid;
-  grid-template-columns: 1fr;
+
+#mobile-menu {
+  display: block;
   position: absolute;
-  width: 15vw;
-  height: 100%;
+  top: 2vh;
+  left: 5vw;
+  width: 15%;
+  height: 70%;
+}
+
+#mobile-menu-nav {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12vh;
+  background-color: rgb(31, 36, 109);
+  width: 100%;
+}
+#nav {
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: absolute;
+  width: 100%;
+  height: 10vh;
   left: 0px;
-  top: 0px;
+  top: 11vh;
   text-align: center;
   font-family: "Nixie One", cursive;
   font-weight: bold;
@@ -63,7 +82,7 @@ export default {
 #nav a {
   display: grid;
   grid-template-columns: 1fr;
-  font-size: 1.3em;
+  font-size: 1.2em;
   align-content: center;
   height: 100%;
   color: rgb(255, 255, 255);
@@ -72,108 +91,36 @@ export default {
 }
 
 #nav a:hover {
-  font-size: 1.8em;
+  font-size: 1.2em;
 }
 
 #icon-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-content: center;
-  justify-items: center;
-}
-
-#mobile-menu {
   display: none;
 }
 
-#mobile-menu-nav {
-  display: none;
+img {
+  width: 40px;
 }
 
 #mobile-icon-container {
-  display: none;
-}
-
-/* PHONE */
-
-@media only screen and (max-width:768px) {
-  #mobile-menu {
-    display: block;
-    position: absolute;
-    top: 2vh;
-    left: 5vw;
-    width: 15%;
-  }
-
-  #mobile-menu-nav {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 12vh;
-    background-color: rgb(31, 36, 109);
-    width: 100%;
-  }
-  #nav {
-    display: none;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    position: absolute;
-    width: 100%;
-    height: 10vh;
-    left: 0px;
-    top: 11vh;
-    text-align: center;
-    font-family: "Nixie One", cursive;
-    font-weight: bold;
-    background-color: rgb(31, 36, 109);
-  }
-
-  #nav a {
-    display: grid;
-    grid-template-columns: 1fr;
-    font-size: 1.2em;
-    align-content: center;
-    height: 100%;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    text-shadow: 5px 5px 5px #000000;
-  }
-
-  #nav a:hover {
-    font-size: 1.2em;
-  }
-
-  #icon-container {
-    display: none;
-  }
-
-  img {
-    width: 40px;
-  }
-
-  #mobile-icon-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10%;
-    position: absolute;
-    top: 3vh;
-    right: 5vw;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20%;
+  position: absolute;
+  top: 3vh;
+  right: 10vw;
 }
 
 /* TABLET */
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  #mobile-menu {
-    width: 10%;
-  }
-
   #nav {
     font-size: 1.3em;
   }
 
-  #icon-container {
-    display: none;
+  #mobile-menu{
+    width: 15%;
+    height: 70%;
   }
 
   img {
@@ -186,5 +133,73 @@ export default {
   }
 }
 
+/* DESKTOP */
 
+@media only screen and (min-width: 1024px) {
+  #app {
+    height: 100%;
+    width: 100%;
+  }
+
+  .header-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5%;
+    width: 80%;
+    margin-left: 20%;
+    justify-items: center;
+  }
+
+  #nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: absolute;
+    width: 15vw;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    font-family: "Nixie One", cursive;
+    font-weight: bold;
+    background-color: rgb(31, 36, 109);
+  }
+
+  #nav a {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1.3em;
+    align-content: center;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-shadow: 5px 5px 5px #000000;
+  }
+
+  #nav a:hover {
+    font-size: 1.8em;
+  }
+
+  #icon-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    justify-items: center;
+  }
+
+  #mobile-menu {
+    display: none;
+  }
+
+  #mobile-menu-nav {
+    display: none;
+  }
+
+  #mobile-icon-container {
+    display: none;
+  }
+
+  img {
+    width: 60px;
+  }
+}
 </style>

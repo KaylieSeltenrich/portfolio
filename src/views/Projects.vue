@@ -6,11 +6,10 @@
 <script>
 // @ is an alias to /src
 
-
 export default {
   name: "Projects",
-  components: {
- 
-  }
+  components: {},
 };
 </script>
+<style lang="css" scoped>
+</style>
