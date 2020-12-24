@@ -111,9 +111,6 @@ body {
   display: none;
 }
 
-img {
-  width: 40px;
-}
 
 #mobile-icon-container {
   display: grid;
