@@ -37,6 +37,10 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.home{
+  width: 100%;
+}
+
 #title-container {
   max-height: 10vh;
   width: 100%;

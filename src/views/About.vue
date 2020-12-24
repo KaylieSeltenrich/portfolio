@@ -69,7 +69,7 @@ margin-left: 2%;
 
 .title {
   font-size: 2.5em;
-  margin-top: 7vh;
+  margin-top: 9vh;
   text-align: center;
   font-family: Pridi, cursive;
 }
