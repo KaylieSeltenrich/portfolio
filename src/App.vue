@@ -41,6 +41,7 @@ export default {
         x.style.display = "grid";
       } else {
         x.style.display = "none";
+        
       }
     },
   },
@@ -92,8 +93,8 @@ body {
   font-family: "Nixie One", cursive;
   font-weight: bold;
   background-color: rgb(31, 36, 109);
+  
 }
-
 
 #nav a {
   display: grid;
@@ -173,6 +174,7 @@ body {
     font-family: "Nixie One", cursive;
     font-weight: bold;
     background-color: rgb(31, 36, 109);
+    transition: opacity 1s ease-in;
   }
 
   #nav a {

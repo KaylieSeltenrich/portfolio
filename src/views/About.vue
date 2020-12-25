@@ -7,7 +7,7 @@
    <div  id="about-me">
    <div  class="title"> About Me: </div>
    <p class="paragraph"> I am a recent graduate from InnoTech College's 6 month Fullstack Web Development diploma program. I also have previous experience
-     working as a Graphic Designer/Typesetter at MinuteMan Press and have a Graphic Communications & Print Technology diploma from SAIT. I am a diligent and creative person who is always eager to learn new things.  </p>
+     working as a Graphic Designer/Typesetter at MinuteMan Press and have a Graphic Communications & Print Technology diploma from SAIT. I am a diligent and creative individual who is always eager to learn new things.  </p>
    </div>
    <div class="title" id="technical"> My Technical Skills: </div>
    <div id="skills"> 
@@ -86,4 +86,55 @@ margin-left: 2%;
   margin-right: 5vw;
 }
 
+
+/* TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+.paragraph{
+  font-size: 1.2em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  text-align: left;
+}
+
+#technical{
+  font-size: 3.5em;
+}
+
+img {
+  filter: grayscale(80);
+  opacity: 80%;
+  width: 70%;
+
+}
+
+#image-container{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+margin-top: 5%;
+margin-left: 2%;
+}
+
+.title {
+  font-size: 4em;
+  margin-top: 9vh;
+  text-align: center;
+  font-family: Pridi, cursive;
+}
+
+#skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.5em;
+  color: black;
+  text-align: center;
+  justify-items: center;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+
+}
 </style>

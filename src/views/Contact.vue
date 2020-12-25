@@ -3,10 +3,14 @@
     <div id="contact-info">
       <div class="header">Contact Information:</div>
       <div id="contactinfo-container">
-        <div class="title">Email:</div> <p> kaylie.seltenrich@gmail.com </p>
-        <div class="title">Mobile:</div> <p> 403-816-9229 </p>
-        <div class="title">LinkedIn:</div> <p> https://www.linkedin.com/in/kaylieseltenrich/ </p>
-        <div class="title">GitHub:</div> <p> https://github.com/KaylieSeltenrich </p>
+        <div class="title">Email:</div>
+        <p><a href="mailto:kaylie.seltenrich@gmail.com"> kaylie.seltenrich@gmail.com </a></p>
+        <div class="title">Mobile:</div>
+        <p><a href="tel:403-816-9229">403-816-9229</a></p>
+        <div class="title">LinkedIn:</div>
+        <p><a href="https://www.linkedin.com/in/kaylieseltenrich/">https://www.linkedin.com/in/kaylieseltenrich/</a></p>
+        <div class="title">GitHub:</div>
+        <p><a href="https://github.com/KaylieSeltenrich">https://github.com/KaylieSeltenrich</a></p>
       </div>
     </div>
     <div class="header">Want a Quote?:</div>
@@ -88,26 +92,84 @@ export default {
   margin-left: 2%;
 }
 
-.title{
+.title {
   font-size: 1.2em;
   font-family: "Nixie One", cursive;
   font-weight: bolder;
   margin-top: 5%;
   margin-left: 2%;
-  
 }
 
-p{
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
   width: 70%;
   font-size: 1em;
   margin-left: 2%;
 }
 
-#contactinfo-container{
+a {
+  color: rgb(31, 36, 109);
+}
+
+#contactinfo-container {
   display: grid;
   grid-template-columns: 1fr;
+}
 
+/* TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #contactinfo-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
+    margin-left: 12%;
+  }
+
+  .header {
+    margin-top: 5vh;
+    font-size: 3.5em;
+    font-family: "Pridi", cursive;
+    white-space: nowrap;
+    margin-left: 10%;
+  }
+
+  .title{
+  font-size: 1.5em;
+  font-family: "Nixie One", cursive;
+  font-weight: bolder;
+  margin-top: 5%;
+  margin-left: 2%;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+
+.form-header {
+  font-size: 2em;
+  margin-left: 10%;
+}
+
+.input {
+  margin-left: 10%;
+}
+
+.input-text {
+  margin-left: 10%;
+}
+
+#submit {
+  margin-left: 25%;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  font-size: 25px;
+
+}
 }
 </style>

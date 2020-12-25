@@ -139,4 +139,45 @@ p {
   margin-bottom: 5%;
 }
 
+/* TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+#title{
+  font-size: 4em;
+}
+
+.project{
+    padding: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid black;
+    margin-top: 5%;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 1px 2px 5px 2px black;
+}
+
+.title {
+  font-size: 3em;
+  margin-top: 0vh;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+}
+
+p {
+  margin-bottom: 5%;
+  font-size: 1.2em;
+}
+
+button {
+
+  padding: 10px 20px;
+  font-size: 20px;
+
+}
+}
 </style>

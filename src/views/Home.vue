@@ -5,9 +5,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <div id="title-container">
-      <div id="title" class="animate__animated animate__fadeInDown">Kaylie Seltenrich</div>
+      <div id="title" class="animate__animated animate__fadeInDown">
+        Kaylie Seltenrich
+      </div>
     </div>
-    <div id="subtitle" class="animate__animated animate__fadeIn animate__delay-1s">Junior Fullstack Web Developer/Designer</div>
+    <div
+      id="subtitle"
+      class="animate__animated animate__fadeIn animate__delay-1s"
+    >
+      Junior Fullstack Web Developer/Designer
+    </div>
     <img id="portrait" src="@/assets/croppedimage.jpg" alt="self portrait" />
     <div id="short-description">
       Hello, my name is Kaylie Seltenrich. Creativity is my fuel and passion. I
@@ -37,7 +44,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
-.home{
+.home {
   width: 100%;
 }
 
@@ -102,4 +109,34 @@ export default {
   text-align: center;
 }
 
+/* TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #title {
+    font-size: 4em;
+    margin-top: 10%;
+  }
+
+  #subtitle {
+    font-size: 1.5em;
+  }
+
+  #portrait {
+    width: 400px;
+    margin-right: 2%;
+  }
+
+  #short-description {
+    font-size: 1.2em;
+  }
+
+  .download {
+    margin-left: 2%;
+  }
+
+  #download-container {
+    margin-top: 10%;
+    text-align: center;
+  }
+}
 </style>
