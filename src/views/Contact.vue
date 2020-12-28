@@ -13,7 +13,8 @@
         <p><a href="https://github.com/KaylieSeltenrich">https://github.com/KaylieSeltenrich</a></p>
       </div>
     </div>
-    <div class="header">Want a Quote?:</div>
+    <div>
+    <div class="header">Want a Quote?: </div>
     <form
       method="GET"
       action="mailto:kaylie.seltenrich@gmail.com"
@@ -28,6 +29,7 @@
       <br />
       <input id="submit" type="submit" value="Send" />
     </form>
+  </div>
   </div>
 </template>
 
@@ -171,5 +173,100 @@ p {
   font-size: 25px;
 
 }
+}
+
+/* DESKTOP */
+
+@media only screen and (min-width: 1024px) {
+.contact{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 5%;
+  margin-left: 15%;
+  column-gap: 5%;
+}
+
+#contact-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  height: 100%;
+  margin-top:0;
+}
+
+.form-header {
+  font-size: 1.5em;
+  font-family: "Pridi", cursive;
+  margin-left: 15%;
+}
+
+.input {
+  margin-left: 15%;
+  height: 3vh;
+  width: 60%;
+  font-size: 1.2em;
+}
+
+.input-text {
+  margin-left: 15%;
+  height: 20vh;
+  width: 80%;
+  resize: none;
+  overflow: scroll;
+  font-size: 1.2em;
+  overflow-x: hidden;
+}
+
+#submit {
+  font-family: "Nixie One", cursive;
+  font-weight: bold;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(31, 36, 109);
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-left: 35%;
+  margin-top: 3%;
+  width: 40%;
+}
+
+.header {
+  margin-top: 0;
+  font-size: 4em;
+  font-family: "Pridi", cursive;
+  white-space: nowrap;
+  margin-left: 15%;
+}
+
+.title {
+  font-size: 2.2em;
+  font-family: "Nixie One", cursive;
+  font-weight: bolder;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  width: 70%;
+  font-size: 1.8em;
+  margin-left: 15%;
+}
+
+a {
+  color: rgb(31, 36, 109);
+}
+
+#contactinfo-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+
 }
 </style>

@@ -4,8 +4,6 @@ import Home from "../views/Home.vue";
 import Contact from "../views/Contact.vue";
 import About from "../views/About.vue";
 import Projects from "../views/Projects.vue";
-import Quote from "../views/Quote.vue";
-
 
 Vue.use(VueRouter);
 
@@ -30,11 +28,6 @@ const routes = [
     name: "Projects",
     component: Projects
   },
-  {
-    path: "/quote",
-    name: "Quote",
-    component: Quote
-  }
 ];
 
 const router = new VueRouter({

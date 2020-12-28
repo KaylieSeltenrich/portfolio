@@ -1,6 +1,6 @@
 <template>
   <div class="projects">
-    <div id="title"> Projects </div>
+    <div id="title">Projects</div>
     <div id="project-container">
       <div class="project">
         <div class="title">Inspo</div>
@@ -21,38 +21,71 @@
           the front-end with Vue.js, Vuex, Vue router and back-end with MariaDB
           and DBeaver.
         </p>
-        <button onclick="window.location.href='https://github.com/KaylieSeltenrich/FrontEndMVP'">View Front End Code</button> <button onclick="window.location.href='https://github.com/KaylieSeltenrich/BackEndMVP'">View Back End Code</button> <button  onclick="window.location.href='https://inspo.ml/#/'">View Live Site</button>
+        <button
+          onclick="window.location.href='https://github.com/KaylieSeltenrich/FrontEndMVP'"
+        >
+          View Front End Code
+        </button>
+        <button
+          onclick="window.location.href='https://github.com/KaylieSeltenrich/BackEndMVP'"
+        >
+          View Back End Code
+        </button>
+        <button onclick="window.location.href='https://inspo.ml/#/'">
+          View Live Site
+        </button>
       </div>
 
       <div class="project">
         <div class="title">Squawker</div>
         <div class="image"><img src="@/assets/squawkericon.svg" /></div>
         <p>
-          Squawker/Tweeter is a twitter clone that I created with Vue.js, Flask, MariaDB
-          and Python. It is a full CRUD style application with ability to create
-          tweets, update tweets, delete tweets, comment on tweets, like tweets,
-          follow other users and more. The backend API was created using Flask,
-          MariaDB and DBeaver as database management. It is fully mobile
-          responsive and works on all devices. 
+          Squawker/Tweeter is a twitter clone that I created with Vue.js, Flask,
+          MariaDB and Python. It is a full CRUD style application with ability
+          to create tweets, update tweets, delete tweets, comment on tweets,
+          like tweets, follow other users and more. The backend API was created
+          using Flask, MariaDB and DBeaver as database management. It is fully
+          mobile responsive and works on all devices.
         </p>
-         <button onclick="window.location.href='https://github.com/KaylieSeltenrich/TweeterFrontEnd'">View Front End Code</button><button onclick="window.location.href='https://github.com/KaylieSeltenrich/TweeterBackEnd'">View Backend Code</button> <button onclick="window.location.href='https://www.squawker.ml/#/'">View Live Site</button>
+        <button
+          onclick="window.location.href='https://github.com/KaylieSeltenrich/TweeterFrontEnd'"
+        >
+          View Front End Code</button
+        ><button
+          onclick="window.location.href='https://github.com/KaylieSeltenrich/TweeterBackEnd'"
+        >
+          View Backend Code
+        </button>
+        <button onclick="window.location.href='https://www.squawker.ml/#/'">
+          View Live Site
+        </button>
       </div>
 
       <div class="project">
         <div class="title">Okotoks Pizza</div>
         <div class="image"><img src="@/assets/okotoks-pizza-logo.png" /></div>
         <p>
-          Okotoks Pizza is a website that I created for a fictional restaurant entirely with HTML and CSS/SASS 
-          without any Javascript or backend. It is a testament to how much can
-          be done simply with these programming languages, such as creating
-          animations and adding neat effects. It also showcases the use of grids
-          to create layout. Okotoks Pizza is a fully mobile responsive website.
+          Okotoks Pizza is a website that I created for a fictional restaurant
+          entirely with HTML and CSS/SASS without any Javascript or backend. It
+          is a testament to how much can be done simply with these programming
+          languages, such as creating animations and adding neat effects. It
+          also showcases the use of grids to create layout. Okotoks Pizza is a
+          fully mobile responsive website.
         </p>
-        <button onclick="window.location.href='https://github.com/KaylieSeltenrich/OkotoksPizzaProject'">View Code</button> <button onclick="window.location.href='https://www.kaylieokotokspizza.ml/'">View Live Site</button>
+        <button
+          onclick="window.location.href='https://github.com/KaylieSeltenrich/OkotoksPizzaProject'"
+        >
+          View Code
+        </button>
+        <button
+          onclick="window.location.href='https://www.kaylieokotokspizza.ml/'"
+        >
+          View Live Site
+        </button>
       </div>
 
       <div class="project">
-        <div class="title">Pokemon Battle </div>
+        <div class="title">Pokemon Battle</div>
         <div class="image"><img src="@/assets/javascript.svg" /></div>
         <p>
           A pokemon battle simulator created with Javascript. You can pick which
@@ -61,7 +94,16 @@
           pokemon is stored through the use of cookies so that you can come back
           to the battle at any time.
         </p>
-        <button onclick="window.location.href='https://github.com/KaylieSeltenrich/PokemonBattle'">View Code</button> <button onclick="window.location.href='http://www.epicpokebattlesim.ml/'">View Live Site</button>
+        <button
+          onclick="window.location.href='https://github.com/KaylieSeltenrich/PokemonBattle'"
+        >
+          View Code
+        </button>
+        <button
+          onclick="window.location.href='http://www.epicpokebattlesim.ml/'"
+        >
+          View Live Site
+        </button>
       </div>
     </div>
   </div>
@@ -80,21 +122,18 @@ export default {
 #project-container {
   display: grid;
   grid-template-columns: 1fr;
-
 }
 
 .project {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    padding: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    border: 1px solid black;
-    margin-top: 10%;
-    background-color: rgb(243, 243, 243);
-    box-shadow: 1px 2px 5px 2px black;
-    
-
+  padding: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 1px solid black;
+  margin-top: 10%;
+  background-color: rgb(243, 243, 243);
+  box-shadow: 1px 2px 5px 2px black;
 }
 
 .title {
@@ -142,11 +181,11 @@ p {
 /* TABLET */
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-#title{
-  font-size: 4em;
-}
+  #title {
+    font-size: 4em;
+  }
 
-.project{
+  .project {
     padding: 5%;
     margin-left: 5%;
     margin-right: 5%;
@@ -154,30 +193,100 @@ p {
     margin-top: 5%;
     background-color: rgb(243, 243, 243);
     box-shadow: 1px 2px 5px 2px black;
+  }
+
+  .title {
+    font-size: 3em;
+    margin-top: 0vh;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+  }
+
+  p {
+    margin-bottom: 5%;
+    font-size: 1.2em;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
 }
 
-.title {
-  font-size: 3em;
-  margin-top: 0vh;
-}
+/* DESKTOP */
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 45%;
-}
+@media only screen and (min-width: 1024px) {
 
-p {
-  margin-bottom: 5%;
-  font-size: 1.2em;
-}
+  #project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 15%;
+    height: 80vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-top: 0;
+  }
 
-button {
+  .project {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    padding: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid black;
+    margin-top: 5%;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 1px 2px 5px 2px black;
+  
+  }
 
-  padding: 10px 20px;
-  font-size: 20px;
+  .title {
+    font-size: 3em;
+    margin-top: 0;
+    text-align: center;
+    font-family: Pridi, cursive;
+  }
 
-}
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+  }
+
+  .image {
+    margin-bottom: 5%;
+  }
+
+  button {
+    font-family: "Nixie One", cursive;
+    font-weight: bold;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(31, 36, 109);
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+
+  #title {
+    font-size: 4.5em;
+    margin-left: 15%;
+    margin-top: 0;
+    text-align: center;
+    font-family: Pridi, cursive;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
 }
 </style>
