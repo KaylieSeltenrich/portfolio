@@ -7,7 +7,7 @@
     <div id="about-me">
       <div class="title">About Me:</div>
       <p class="paragraph">
-        I am a recent graduate from InnoTech College's 6 month Fullstack Web
+        I am a recent graduate from InnoTech College's six-month Fullstack Web
         Development diploma program. I also have previous experience working as
         a Graphic Designer/Typesetter at MinuteMan Press and have a Graphic
         Communications & Print Technology diploma from SAIT. I am a diligent and
