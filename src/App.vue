@@ -153,15 +153,6 @@ body {
     width: 100%;
   }
 
-  .header-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 5%;
-    width: 80%;
-    margin-left: 20%;
-    justify-items: center;
-  }
-
   #nav {
     display: grid;
     grid-template-columns: 1fr;
