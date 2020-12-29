@@ -111,7 +111,7 @@ export default {
 
 /* TABLET */
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) {
   #title {
     font-size: 4em;
     margin-top: 10%;
@@ -141,74 +141,6 @@ export default {
 }
 
 /* DESKTOP */
-@media only screen and (min-width: 1024px) {
-  .home {
-    width: 100%;
-  }
-
-  #title-container {
-    max-height: 10vh;
-    width: 100%;
-  }
-
-  #title {
-    margin-top: 15%;
-    margin-left: 5%;
-    font-family: Pridi, cursive;
-    font-size: 2.6em;
-    white-space: nowrap;
-    color: black;
-  }
-
-  #subtitle {
-    height: 100%;
-    margin-left: 5%;
-    font-family: Pridi, cursive;
-    font-size: 1.1em;
-    line-height: 0.8;
-    color: grey;
-  }
-
-  #portrait {
-    margin-top: 5%;
-    width: 200px;
-    border-radius: 50%;
-    float: right;
-  }
-
-  #short-description {
-    margin-top: 5%;
-    margin-left: 5%;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-
-  .download {
-    font-family: "Nixie One", cursive;
-    font-weight: bold;
-    padding: 15px 25px;
-    text-decoration: none;
-    font-size: 24px;
-    text-align: center;
-    color: #fff;
-    background-color: rgb(31, 36, 109);
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-  }
-
-  .download:active {
-    background-color: rgb(71, 76, 153);
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
-
-  #download-container {
-    margin-top: 10%;
-    text-align: center;
-  }
-}
-
-/* DESKTOP */
 
 @media only screen and (min-width: 1024px) {
   #title-container {
@@ -228,18 +160,20 @@ export default {
     margin: 0;
     margin-left: 20%;
     line-height: 1.5;
+    
   }
 
   #portrait {
-    margin-top: 0%;
+    margin-top: 0;
     margin-right: 3%;
     width: 500px;
   }
 
   #short-description {
-    margin-top: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     margin-left: 20%;
-    font-size: 1.2em;
+    font-size: 1.8em;
   }
 
   .download:hover {
@@ -249,16 +183,18 @@ export default {
   }
 
   .download {
+    display: block;
+    width: 40%;
     font-weight: bold;
-    width: 80%;
-    padding: 15px 25px;
+    padding: 20px 45px;
     text-decoration: none;
     font-size: 35px;
     text-align: center;
+    margin-left: 20%;
   }
 
   #download-container {
-    margin-top: 5%;
+    margin: 0;
     text-align: center;
   }
 }

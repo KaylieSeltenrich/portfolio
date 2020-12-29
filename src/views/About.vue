@@ -116,7 +116,7 @@ img {
 
 /* TABLET */
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) {
   .paragraph {
     font-size: 1.2em;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -200,7 +200,7 @@ img {
   .title {
     font-size: 4em;
     width: 100%;
-    margin-top: 9vh;
+    margin-top: 2vh;
     font-family: Pridi, cursive;
   }
 

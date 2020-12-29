@@ -125,7 +125,7 @@ body {
 
 /* TABLET */
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) {
   #nav {
     font-size: 1.3em;
   }
@@ -156,7 +156,7 @@ body {
   #nav {
     display: grid;
     grid-template-columns: 1fr;
-    position: absolute;
+    position: fixed;
     width: 15vw;
     height: 100%;
     left: 0px;

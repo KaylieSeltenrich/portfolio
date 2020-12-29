@@ -182,7 +182,7 @@ p {
 
 /* TABLET */
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) {
   #title {
     font-size: 4em;
   }
@@ -227,11 +227,13 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-left: 15%;
+    margin-right: 2%;
     height: 80vh;
     overflow: scroll;
     overflow-x: hidden;
     margin-top: 0;
   }
+  
 
   .project {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -264,16 +266,16 @@ p {
   }
 
   button {
-    font-family: "Nixie One", cursive;
-    font-weight: bold;
-    padding: 5px 15px;
+    padding: 10px 20px;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
     color: #fff;
     background-color: rgb(31, 36, 109);
     border-radius: 15px;
     box-shadow: 0 9px #999;
+    margin-right: 5%;
+    margin-top: 5%;
   }
 
   #title {
@@ -285,7 +287,9 @@ p {
   }
 
   p {
-    margin-bottom: 0;
+    margin-bottom: 0%;
   }
+
+  
 }
 </style>

@@ -1,35 +1,48 @@
 <template>
   <div class="contact">
     <div id="contact-info">
-      <div class="header">Contact Information:</div>
       <div id="contactinfo-container">
+        <div class="header">Contact Information:</div>
         <div class="title">Email:</div>
-        <p><a href="mailto:kaylie.seltenrich@gmail.com"> kaylie.seltenrich@gmail.com </a></p>
+        <p>
+          <a href="mailto:kaylie.seltenrich@gmail.com">
+            kaylie.seltenrich@gmail.com
+          </a>
+        </p>
         <div class="title">Mobile:</div>
         <p><a href="tel:403-816-9229">403-816-9229</a></p>
         <div class="title">LinkedIn:</div>
-        <p><a href="https://www.linkedin.com/in/kaylieseltenrich/">https://www.linkedin.com/in/kaylieseltenrich/</a></p>
+        <p>
+          <a href="https://www.linkedin.com/in/kaylieseltenrich/"
+            >https://www.linkedin.com/in/kaylieseltenrich/</a
+          >
+        </p>
         <div class="title">GitHub:</div>
-        <p><a href="https://github.com/KaylieSeltenrich">https://github.com/KaylieSeltenrich</a></p>
+        <p>
+          <a href="https://github.com/KaylieSeltenrich"
+            >https://github.com/KaylieSeltenrich</a
+          >
+        </p>
       </div>
     </div>
-    <div>
-    <div class="header">Want a Quote?: </div>
-    <form
-      method="GET"
-      action="mailto:kaylie.seltenrich@gmail.com"
-      enctype="text/plain"
-    >
-      <div class="form-header">Subject:</div>
-      <input class="input" type="text" name="subject" />
+    <div id="quote-container">
+      <div class="header">Want a Quote?:</div>
 
-      <div class="form-header">Message:</div>
-      <textarea class="input-text" name="body"></textarea>
+      <form
+        method="GET"
+        action="mailto:kaylie.seltenrich@gmail.com"
+        enctype="text/plain"
+      >
+        <div class="form-header">Subject:</div>
+        <input class="input" type="text" name="subject" />
 
-      <br />
-      <input id="submit" type="submit" value="Send" />
-    </form>
-  </div>
+        <div class="form-header">Message:</div>
+        <textarea class="input-text" name="body"></textarea>
+
+        <br />
+        <input id="submit" type="submit" value="Send" />
+      </form>
+    </div>
   </div>
 </template>
 
@@ -68,6 +81,7 @@ export default {
   width: 80%;
   resize: none;
   overflow: scroll;
+  overflow-x: hidden;
   font-size: 1.2em;
 }
 
@@ -122,10 +136,10 @@ a {
 
 /* TABLET */
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) {
   #contactinfo-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     align-items: flex-end;
     margin-left: 12%;
   }
@@ -135,138 +149,119 @@ a {
     font-size: 3.5em;
     font-family: "Pridi", cursive;
     white-space: nowrap;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 1.5em;
+    font-family: "Nixie One", cursive;
+    font-weight: bolder;
+    margin-top: 5%;
+    margin-left: 2%;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  .form-header {
+    font-size: 2em;
     margin-left: 10%;
   }
 
-  .title{
-  font-size: 1.5em;
-  font-family: "Nixie One", cursive;
-  font-weight: bolder;
-  margin-top: 5%;
-  margin-left: 2%;
-}
+  .input {
+    margin-left: 10%;
+  }
 
-p {
-  font-size: 1.5em;
-}
+  .input-text {
+    margin-left: 10%;
+  }
 
-
-.form-header {
-  font-size: 2em;
-  margin-left: 10%;
-}
-
-.input {
-  margin-left: 10%;
-}
-
-.input-text {
-  margin-left: 10%;
-}
-
-#submit {
-  margin-left: 25%;
-  align-items: center;
-  width: 50%;
-  margin-bottom: 5%;
-  margin-top: 5%;
-  font-size: 25px;
-
-}
+  #submit {
+    margin-left: 25%;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: 25px;
+  }
 }
 
 /* DESKTOP */
 
 @media only screen and (min-width: 1024px) {
-.contact{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 5%;
-  margin-left: 15%;
-  column-gap: 5%;
-}
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15%;
+    width: 80%;
+    margin-left: 15%;
+    margin-top: 10%;
+   
+  }
 
-#contact-info {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-content: center;
-  height: 100%;
-  margin-top:0;
-}
+  #contact-info {
+    display: block;
+    margin: 0;
+  }
 
-.form-header {
-  font-size: 1.5em;
-  font-family: "Pridi", cursive;
-  margin-left: 15%;
-}
+  #contactinfo-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: top;
+    
+  }
 
-.input {
-  margin-left: 15%;
-  height: 3vh;
-  width: 60%;
-  font-size: 1.2em;
-}
+  .header {
+    font-size: 4em;
+    font-family: "Pridi", cursive;
+    white-space: nowrap;
+    margin: 0;
+  
+  }
 
-.input-text {
-  margin-left: 15%;
-  height: 20vh;
-  width: 80%;
-  resize: none;
-  overflow: scroll;
-  font-size: 1.2em;
-  overflow-x: hidden;
-}
+  .title {
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: 10px;
+  }
 
-#submit {
-  font-family: "Nixie One", cursive;
-  font-weight: bold;
-  padding: 15px 25px;
-  text-decoration: none;
-  font-size: 20px;
-  text-align: center;
-  color: #fff;
-  background-color: rgb(31, 36, 109);
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-  margin-left: 35%;
-  margin-top: 3%;
-  width: 40%;
-}
+  p {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 2em;
+  }
 
-.header {
-  margin-top: 0;
-  font-size: 4em;
-  font-family: "Pridi", cursive;
-  white-space: nowrap;
-  margin-left: 15%;
-}
+  .form-header {
+    font-size: 2em;
+    margin-left: 0%;
+  }
 
-.title {
-  font-size: 2.2em;
-  font-family: "Nixie One", cursive;
-  font-weight: bolder;
-  margin-top: 5%;
-  margin-left: 15%;
-}
+  .input {
+    margin: 0;
+    width: 30vw;
+  }
 
-p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold;
-  width: 70%;
-  font-size: 1.8em;
-  margin-left: 15%;
-}
+  .input-text {
+    margin: 0;
+    width: 30vw;
+  }
 
-a {
-  color: rgb(31, 36, 109);
-}
+  #submit {
+    margin-left: 15%;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: 25px;
+  }
 
-#contactinfo-container {
-  display: grid;
-  grid-template-columns: 1fr;
-}
+  #quote-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: left;
+    width: 100%;
 
-
+  }
 }
 </style>
