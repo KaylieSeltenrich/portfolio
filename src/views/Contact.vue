@@ -250,11 +250,19 @@ a {
   #submit {
     margin-left: 15%;
     align-items: center;
-    width: 50%;
+    width: 70%;
     margin-bottom: 5%;
     margin-top: 5%;
     font-size: 25px;
   }
+
+    
+   #submit:hover {
+    background-color: rgb(71, 76, 153);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
 
   #quote-container {
     display: grid;

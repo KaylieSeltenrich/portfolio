@@ -266,16 +266,25 @@ p {
   }
 
   button {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
     padding: 10px 20px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     color: #fff;
     background-color: rgb(31, 36, 109);
     border-radius: 15px;
     box-shadow: 0 9px #999;
-    margin-right: 5%;
     margin-top: 5%;
+    margin-left: 25%;
+  }
+  
+   button:hover {
+    background-color: rgb(71, 76, 153);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
   }
 
   #title {
